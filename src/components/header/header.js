@@ -8,7 +8,7 @@ const Header = () => {
             <h3>
                 <a href="#">
                     Star DB
-        </a>
+                </a>
             </h3>
             <ul className="d-flex">
                 <li>
