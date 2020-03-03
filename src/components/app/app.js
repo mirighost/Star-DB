@@ -34,27 +34,33 @@ export default class App extends Component {
                 <RandomPlanet />
                 <PeoplePage />
 
-                <div className="row mb2">
-                    <div className="col-md-6">
-                        <ItemList
-                            onItemSelected={this.onPersonSelected}
-                            getData={this.swapiService.getAllPlanets}} />
-                    </div>
-                    <div className="col-md-6">
-                        <PersonDetails
-                            personId={this.state.selectedPerson} />
+                <div className='container-fluid'>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <ItemList
+                                onItemSelected={this.onPersonSelected}
+                                getData={this.swapiService.getAllPlanets}
+                                renderItem={(item) => item.name} />
+                        </div>
+                        <div className="col-md-6">
+                            <PersonDetails
+                                personId={this.state.selectedPerson} />
+                        </div>
                     </div>
                 </div>
 
-                <div className="row mb2">
-                    <div className="col-md-6">
-                        <ItemList
-                            onItemSelected={this.onPersonSelected}
-                            getData={this.swapiService.getAllStarships} />
-                    </div>
-                    <div className="col-md-6">
-                        <PersonDetails
-                            personId={this.state.selectedPerson} />
+                <div className='container-fluid'>
+                    <div className="row mb2">
+                        <div className="col-md-6">
+                            <ItemList
+                                onItemSelected={this.onPersonSelected}
+                                getData={this.swapiService.getAllStarships}
+                                renderItem={(item) => item.name} />
+                        </div>
+                        <div className="col-md-6">
+                            <PersonDetails
+                                personId={this.state.selectedPerson} />
+                        </div>
                     </div>
                 </div>
             </div>
