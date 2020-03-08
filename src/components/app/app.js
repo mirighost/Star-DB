@@ -10,8 +10,8 @@ import {
     PlanetDetails,
     StarshipDetails,
     PersonList,
-    // PlanetList,
-    // StarshipList
+    PlanetList,
+    StarshipList
 } from '../sw-components/index'
 
 import SwapiService from '../../services/swapi-service'
@@ -34,9 +34,9 @@ export default class App extends Component {
                     <PlanetDetails itemId={5} />
                     <StarshipDetails itemId={9} />
 
-                    <PersonList>
-                        {({ name }) => <span>{name}</span>}
-                    </PersonList >
+                    <PersonList />
+                    <PlanetList />
+                    <StarshipList />
 
                 </div>
             </ErrorBoundary>
