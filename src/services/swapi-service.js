@@ -1,4 +1,5 @@
 export default class SwapiService {
+
     _apiBase = 'https://swapi.co/api';
     _imageBase = 'https://starwars-visualguide.com/assets/img';
 
@@ -16,8 +17,8 @@ export default class SwapiService {
     getAllPeople = async () => {
         const res = await this.getResource(`/people/`);
         return res.results
-          .map(this._transformPerson);
-      };
+            .map(this._transformPerson);
+    };
 
     getPerson = async (id) => {
         const person = await this.getResource(`/people/${id}/`);
