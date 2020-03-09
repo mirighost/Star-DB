@@ -4,6 +4,7 @@ import Header from '../header';
 import RandomPlanet from '../random-planet';
 import ErrorBoundary from '../error-boundary/index';
 // import Row from '../row/index'
+import SwapiService from '../../services/swapi-service'
 import { SwapiServiceProvider } from '../swapi-service-context/index';
 
 import {
@@ -14,8 +15,6 @@ import {
     PlanetList,
     StarshipList
 } from '../sw-components/index'
-
-import SwapiService from '../../services/swapi-service'
 
 import './app.css';
 
