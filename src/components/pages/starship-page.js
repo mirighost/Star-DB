@@ -5,7 +5,7 @@ import { StarshipDetails, StarshipList, } from '../sw-components/index';
 export default class StarshipPage extends Component {
 
     state = {
-        selectedItem: 15
+        selectedItem: 5
     };
 
     onItemSelected = (selectedItem) => {
