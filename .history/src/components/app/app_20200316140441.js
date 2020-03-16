@@ -18,19 +18,19 @@ export default class App extends Component {
         return (
             <ErrorBoundary>
                 <SwapiServiceProvider value={this.swapiService}>
-                    <Router>
 
-                        <div className="stardb-app">
-                            <Header />
-                            <RandomPlanet />
 
-                            <Route path="/people" component={PeoplePage} />
-                            <Route path="/planets" component={PlanetPage} />
-                            <Route path="/starships" component={StarshipPage} />
+                    <div className="stardb-app">
+                        <Header />
+                        <RandomPlanet />
 
-                        </div>
+                        <PeoplePage />
+                        <PlanetPage />
+                        <StarshipPage />
 
-                    </Router>
+                    </div>
+
+                    
                 </SwapiServiceProvider>
             </ErrorBoundary>
         );

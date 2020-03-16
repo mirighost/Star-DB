@@ -24,9 +24,13 @@ export default class App extends Component {
                             <Header />
                             <RandomPlanet />
 
-                            <Route path="/people" component={PeoplePage} />
-                            <Route path="/planets" component={PlanetPage} />
-                            <Route path="/starships" component={StarshipPage} />
+                            <Route path="/peope" component={PeoplePage}>
+                            <Route path="/peope" component={PlanetPage}>
+                            <Route path="/peope" component={StarshipPage}>
+
+                            < />
+                            < />
+                            <StarshipPage />
 
                         </div>
 
