@@ -9,7 +9,7 @@ import { PeoplePage, PlanetPage, StarshipPage } from '../pages/index';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import './app.css'
+import ''
 
 export default class App extends Component {
 

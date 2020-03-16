@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className="header d-flex">
             <h3>
-                <Link to="/">
+                <Link href="/">
                     Star DB
                 </Link>
             </h3>

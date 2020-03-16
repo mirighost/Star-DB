@@ -9,8 +9,6 @@ import { PeoplePage, PlanetPage, StarshipPage } from '../pages/index';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import './app.css'
-
 export default class App extends Component {
 
     swapiService = new SwapiService();
@@ -25,9 +23,7 @@ export default class App extends Component {
                         <div className="stardb-app">
                             <Header />
                             <RandomPlanet />
-                            <Route path="/"
-                                render={() => <h2>Welcome to StarDB</h2>}
-                                exact />
+            <Route path="/">
                             <Route path="/people" component={PeoplePage} />
                             <Route path="/planets" component={PlanetPage} />
                             <Route path="/starships" component={StarshipPage} />

@@ -9,7 +9,7 @@ import { PeoplePage, PlanetPage, StarshipPage } from '../pages/index';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import './app.css'
+import "./app.css"
 
 export default class App extends Component {
 
@@ -26,7 +26,7 @@ export default class App extends Component {
                             <Header />
                             <RandomPlanet />
                             <Route path="/"
-                                render={() => <h2>Welcome to StarDB</h2>}
+                                render={() => <h2 >Welcome to StarDB</h2>}
                                 exact />
                             <Route path="/people" component={PeoplePage} />
                             <Route path="/planets" component={PlanetPage} />
