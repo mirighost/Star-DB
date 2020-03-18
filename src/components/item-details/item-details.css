@@ -22,3 +22,8 @@
 .item-details .list-group-item .term {
   margin-right: 0.5rem;
 }
+
+.text {
+  display: flex;
+  justify-content: center;
+}
