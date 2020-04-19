@@ -5,15 +5,11 @@ const withSwapiService = (mapMethodsToProps) => (Wrapped) => {
     return (props) => {
         return (
             <SwapiServiceConsumer>
-                {
-                    (swapiService) => {
-                        const serviceProps = mapMethodsToProps(swapiService);
+                {(swapiService) => {
+                    const serviceProps = mapMethodsToProps(swapiService);
 
-                        return (
-                            <Wrapped {...props} {...serviceProps} />
-                        )
-                    }
-                }
+                    return <Wrapped {...props} {...serviceProps} />;
+                }}
             </SwapiServiceConsumer>
         );
     };

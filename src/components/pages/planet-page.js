@@ -7,7 +7,8 @@ const PlanetsPage = ({ history }) => {
         <PlanetList
             onItemSelected={(itemId) => {
                 history.push(itemId);
-            }} />
+            }}
+        />
     );
 };
 
